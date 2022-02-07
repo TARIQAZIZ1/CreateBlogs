@@ -10,7 +10,6 @@ Future main() async{
   await Firebase.initializeApp();
   runApp(myApp());
 }
-
 class myApp extends StatelessWidget {
   const myApp({Key? key}) : super(key: key);
 
