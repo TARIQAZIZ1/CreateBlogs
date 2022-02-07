@@ -184,7 +184,6 @@ class _signUpState extends State<signUp> {
                     ),
                   ),
                   onTap:(){
-                 Future: Firebase.initializeApp();
                     FirebaseAuth.instance.createUserWithEmailAndPassword
                       (email:_email,
                         password: _password)
