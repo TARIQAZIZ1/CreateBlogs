@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class homePage extends StatefulWidget {
-  const homePage({Key? key}) : super(key: key);
 
   @override
   _homePageState createState() => _homePageState();
@@ -68,63 +67,73 @@ class _homePageState extends State<homePage> {
               Text("Create the blog you want"),
               Container(
                 margin: EdgeInsets.only(
-                  top: 180,
+                  top: height*.3,
                 ),
-                height: height*.06,
-                child: Column(
-                  children: [
-                    Expanded(child: Text('You don\'t have any blogs')),
-                    Expanded(
-                      child: TextButton(
-                        child: Text(
-                          'Lets Create a Blog',
-                          style: TextStyle(
-                            decoration: TextDecoration.underline,
-                            fontWeight: FontWeight.bold,
+                height: height*.08,
+                child: Center(
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(child: Align(alignment: Alignment.bottomCenter,child: Text('You don\'t have any blogs'))),
+                        Expanded(
+                          child: TextButton(
+                            child: Text(
+                              'Lets Create a Blog',
+                              style: TextStyle(
+                                color: Color(0xff0D638A),
+                                decoration: TextDecoration.underline,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            onPressed: (){
+                              Navigator.pushNamed(context, '/uploadImage');
+                            },
                           ),
                         ),
-                        onPressed: (){},
-                      ),
-                    )
-                  ],
+                      ],
+                    ),
                 ),
-              )
+              ),
             ],
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: (){},
+          onPressed: (){
+            Navigator.pushNamed(context, '/uploadImage');
+          },
           backgroundColor: Colors.white,
           shape: StadiumBorder(
               side: BorderSide(
-                  color: Colors.indigo, width: 3)),
+                  color: Color(0xff0D638A), width: 3)),
 
           child: Icon(
             Icons.add,
-            color: Colors.indigo,
+            color: Color(0xff0D638A),
             size: 40,
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.indigo,
+          backgroundColor: Color(0xff0D638A),
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home,
               size: 30,
-              color: Colors.white,),
+              color: Colors.white,
+              ),
               label: '',
             ),
             BottomNavigationBarItem(
               backgroundColor: Colors.white,
-              icon: Icon(Icons.search,size: 30,),
+              icon: InkWell(
+                  child: Icon(Icons.search,size: 30,)),
               label: '',
             ),
             BottomNavigationBarItem(
               backgroundColor: Colors.black,
               icon: Icon(
-                Icons.person_rounded,
-                size: 30,
-              ),
+                  Icons.person_rounded,
+                  size: 30,
+                ),
               label: '',
             ),
           ],

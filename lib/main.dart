@@ -1,6 +1,9 @@
+import 'dart:math';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:jmmtask/screens/blogs.dart';
 import 'package:jmmtask/screens/createBologs.dart';
 import 'package:jmmtask/screens/homePage.dart';
 import 'package:jmmtask/screens/logIn_screen.dart';
@@ -12,13 +15,12 @@ Future main() async{
 }
 class myApp extends StatelessWidget {
   const myApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
-      home: signUp(),
+      home: blogs(title: '', image: '', desc: '',),
       routes:{
         '/signUp':(_)=>signUp(),
         '/homepage':(_)=>homePage(),
