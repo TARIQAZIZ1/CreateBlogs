@@ -5,7 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:jmmtask/controllers/color_contraints/colors.dart';
 import 'package:jmmtask/controllers/widgets/blogs_list.dart';
 import 'package:jmmtask/controllers/widgets/empty_list.dart';
-import 'package:jmmtask/views/create_blogs.dart';
+import 'package:jmmtask/views/blogs_contents/create_blogs.dart';
 
 class MyBlogs extends StatefulWidget {
   @override

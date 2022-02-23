@@ -9,8 +9,8 @@ import 'package:image_picker/image_picker.dart';
 import 'package:jmmtask/controllers/color_contraints/colors.dart';
 import 'package:jmmtask/models/blogs_model.dart';
 import 'package:jmmtask/controllers/utils/singin_signup_button.dart';
-import 'package:jmmtask/views/myblogs_screen.dart';
-import 'package:jmmtask/views/text_form_field.dart';
+import 'package:jmmtask/views/blogs_contents/myblogs_screen.dart';
+import 'package:jmmtask/controllers/utils/text_form_field.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

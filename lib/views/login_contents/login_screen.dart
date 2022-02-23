@@ -9,8 +9,8 @@ import 'package:jmmtask/controllers/color_contraints/colors.dart';
 import 'package:jmmtask/controllers/utils/singin_signup_button.dart';
 import 'package:jmmtask/views/login_contents/login_widgets/social_auth_button.dart';
 import 'package:jmmtask/views/signup_contents/signup_screen.dart';
-import '../myblogs_screen.dart';
-import '../text_form_field.dart';
+import '../blogs_contents/myblogs_screen.dart';
+import '../../controllers/utils/text_form_field.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LogInScreen extends StatefulWidget {

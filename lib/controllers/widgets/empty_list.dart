@@ -2,7 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:jmmtask/controllers/color_contraints/colors.dart';
-import 'package:jmmtask/views/create_blogs.dart';
+import 'package:jmmtask/views/blogs_contents/create_blogs.dart';
 import 'package:jmmtask/views/signup_contents/signup_screen.dart';
 
 //if the list is empty this widget will build

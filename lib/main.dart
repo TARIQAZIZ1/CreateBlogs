@@ -6,7 +6,7 @@ import 'package:jmmtask/controllers/color_contraints/colors.dart';
 import 'package:jmmtask/views/animated_splash/splash_screen.dart';
 import 'package:jmmtask/views/login_contents/login_screen.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:jmmtask/views/myblogs_screen.dart';
+import 'package:jmmtask/views/blogs_contents/myblogs_screen.dart';
 import 'package:jmmtask/views/signup_contents/signup_screen.dart';
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();

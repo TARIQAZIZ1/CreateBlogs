@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:jmmtask/views/myblogs_screen.dart';
+import 'package:jmmtask/views/blogs_contents/myblogs_screen.dart';
 
 class blogModel{
   String bid= '';
